@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover the latest trends in fashion for women and men at Forever Fashion. Shop our wide selection of clothes, bags, jewelry, and more. Elevate your style with our curated collections.">
+    <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, Forever Fashion, latest trends, stylish clothing, accessories">
+    <meta name="author" content="Forever Fashion">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
+    <link rel="icon" href="images/diamond.jpg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <title>Forever Fashion</title>
+
+</head>
+<body>
+
+    <nav id="navbar" class="navbar">
+        
+        <a href="#" class="brand"><b><h1>Forever Fashion</h1></b></a>
+        <ul>
+            <li><a href="#" class="nav-hid">Menu</a></li>
+            <li><i class="fa-solid fa-bars" id="menu_icon"></i></li>
+        </ul>
+    </nav>
+
+    <section class="videobg" id="video1">
+        <video src="assets/Hero Pages/video.mp4" type="video/mp4" autoplay loop muted plays-inline class="video" ></video>
+        <h2>Forever Fashion Deep Time</h2>
+        <button>Discover the Collections</button>
+    </section>
+        
+    <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+
+    <!-- cart -->
+    <div class="cart-section">
+        <div class="cart-header">
+            <h2>SHOPPING CART</h2>
+            <div class="closeCart">
+                <ion-icon name="close-outline" id="closeCart"></ion-icon>
+            </div>
+        </div>
+        <div class="cart_products">
+              <!-- add cart products in js -->
+        </div>
+        <div class="cart_total">
+            <h3>Total:</h3>
+            <span id="total_price"></span>
+        </div>
+        <div class="btn_control">
+            <button class="viewCart" onclick="viewCart();">View Cart</button>
+            <button class="checkout" onclick="checkOut();">Check Out</button>
+        </div>
+    </div>
+    
+    <!-- Top Products -->
+    <div class="top_products">
+        <div class="container">
+            <div class="header">
+                <h3>Trending Products</h3>
+                <p>Follow the most popular trends and get exclusive items from Forever Fashion.</p>
+            </div>
+            <div class="products">
+              <!-- add by js -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- collection -->
+    <div class="collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+          <ul class="collection-list">
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="card-title">Summer Collection</h2>
+
+                <p class="card-text">Starting at $17.99</p>
+
+                <a href="products.html" class="btn-link">
+                  <span>Shop Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('images/background/banner1.webp')"></div>
+                </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="card-title">What’s New?</h2>
+
+                <p class="card-text">Get the glow</p>
+
+                <a href="#" class="btn-link">
+                  <span>Discover Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('images/background/banner2.webp')"></div>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="card-title">Buy 1 Get 1</h2>
+
+                <p class="card-text">Starting at $7.99</p>
+
+                <a href="#" class="btn-link">
+                  <span>Discover Now</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('images/background/banner3.webp')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+    </div>
+
+    <!-- news -->
+    <div class="news hight">
+        <div class="news-text">
+            <h4>Newsletter</h4>
+            <p>
+                Subscribe to our newsletter and get 20% off your first purchase
+            </p>
+        </div>
+        <div class="Subscribe-form">
+            <input type="email" name="email" placeholder="Enter Your Email" autocomplete="off">
+            <button type="submit" value="submit">
+                <img src="images/send.png" alt="send-data" width="30"/>
+            </button>
+        </div>
+    </div>
+
+        <section class="links">
+        <div class="footer container">
+            <div class="column">
+              <div class="cell cell-head">HELP</div>
+              <div class="cell"><a href="#" class="links">Contact Us</div>
+              <div class="cell"><a href="#" class="links">Product Care</a></div>
+              <div class="cell"><a href="#" class="links">FAQ's</a></div>
+            </div>
+            <div class="column">
+              <div class="cell cell-head">ABOUT FOREVER FASHION</div>
+              <div class="cell"><a href="#" class="links">Follow Us</a></div>
+              <div class="cell"><a href="#" class="links">Latest News</a></div>
+              <div class="cell"><a href="#" class="links">About Forever Fashion</a></div>
+            </div>
+    </section>
+
+    <footer class="footer">
+
+    <div class="last-logo">Forever Fashion</div><br>
+        <ul>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Legal & privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </footer>
+
+    <div class="accordian-container">
+        <hr class="hr-hid">
+        <button class="accordion">Help</button>
+            <div class="panel">
+                <a href="#">Contact Us</a>
+                <a href="#">Feedbacks</a>
+                <a href="#">FAQ's</a>
+
+            </div>
+        
+        <hr class="hr-hid">
+
+        <button class="accordion">About Forever Fashion</button>
+            <div class="panel">
+                <a href="#">Follow Us</a>
+                <a href="#">Latest News</a>
+                <a href="#">About Forever Fashion</a>
+            </div>
+
+        <hr class="hr-hid">
+        
+        <button class="accordion">Connect</button>
+            <div class="panel">
+
+                <div class="socialmedia">
+
+                    <i class="fa-brands fa-instagram social insta"></i>
+
+                   <i class="fa-brands fa-facebook-f social"></i>
+
+                    <i class="fa-brands fa-twitter social"></i>
+
+                    <i class="fa-brands fa-youtube social"></i>
+
+                </div>
+            </div>
+            <hr class="hr-hid">
+    </div>
+    
+
+    <footer class="mobile-footer">
+
+        <ul>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Legal & privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+        
+    </footer>
+
+    <script>
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = "-100px";
+        } else {
+            navbar.style.top = "0";
+            if (scrollTop === 0) {
+                navbar.classList.remove("scrolled"); 
+            } else {
+                navbar.classList.add("scrolled"); 
+                }
+            }
+        lastScrollTop = scrollTop;
+        }
+        );
+
+//Accordian
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                var panel = this.nextElementSibling;
+                var isActive = this.classList.contains("active");
+
+                // Close all accordion panels
+
+                for (var j = 0; j < acc.length; j++) {
+                    var otherPanel = acc[j].nextElementSibling;
+                    if (otherPanel !== panel) {
+                        otherPanel.style.maxHeight = null;
+                        acc[j].classList.remove("active");
+                    }
+                }
+
+                if (isActive) {
+                    this.classList.remove("active");
+                    panel.style.maxHeight = null;
+                } else {
+                    this.classList.add("active");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                }
+            );
+        }
+
+    </script>
+
+    <script src="JavaScript/index.js"></script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/cart.js"></script>
+</body>
+</html>

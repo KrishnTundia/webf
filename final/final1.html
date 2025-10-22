@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 
+'apple-touch-icon-retina.png')}">
+    <title>Clothing</title>
+    <script async src="https://pag<ead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6708177318840573"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar" class="navbar" class="navbir">
+        <a href="#" class="brand"><b>Clothing</b></a>
+        <ul>
+            <li><a href="#" class="nav-hid">Menu</a></li>
+            <li><i class="fa-solid fa-bars" id="menu_icon"></i></li>
+        </ul>
+    </nav>
+    <section class="videobg" id="video1">
+        <video src="assets/Hero Pages/video.mp4" type="video/mp4" autoplay loop muted plays-inline playbackspeed class="video" ></video>
+        <h2>Clothing TEMPLATE</h2>
+        <button>Discover the Collections</button>
+    </section>
+    <div class="top_products">
+        <div class="container">
+            <div class="header">
+                <h3>Trending Products</h3>
+                <p>Follow the most popular trends and get exclusive items from Foesta shop.</p>
+            </div>
+            <div class="products">
+              <!-- add by js -->
+            </div>
+        </div>
+    </div>
+      <div class="header">
+        <h3>Discover Categories</h3>
+        <p>Discover the various categories and get exclusive items from Foesta shop.</p>
+      </div><br>
+      <div class="collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+          <ul class="collection-list">
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="card-title">T-Shirts</h2>
+                <p class="card-text">Starting at $17.99</p>
+                <a href="products.html" class="btn-link">
+                  <span>Shop Now</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+                <div class="has-bg-image" style="background-image: url('images/background/banner1.webp')"></div>
+                </div>s
+            </li>
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="card-title">What’s New?</h2>
+                <p class="card-text">Get the now</p>
+                <a href="#" class="btn-link">
+                  <span>Watch Now</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+                <div class="has-bg-image" style="background-image: url('images/background/banner2.webp')"></div>
+              </div>
+            </li>
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="card-title">Buy 1 Get 1</h2>
+                <p class="card-text">Starting at $7.99</p>
+                <a href="#" class="btn-link">
+                  <span>Lookout for offers</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+                <div class="has-bg-image" style="background-image: url('images/background/banner3.webp')"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div class="news hight">
+        <div class="news-text">
+            <h4>Newsletter</h4>
+            <p>
+                Subscribe to our newsletter and get 20% off your first purchase
+            </p>
+        </div>
+        <div class="Subscribe-form">
+            <input type="email" name="email" placeholder="Enter Your Email" autocomplete="off">
+            <button type="submit" value="submit">
+                <img src="images/send.png" alt="send-data" width="30"/>
+            </button>
+        </div>
+    </div><br><br><br>
+        <section class="links">
+        <div class="conteiner">
+            <div class="column">
+              <div class="cell cell-head">HELP</div>
+              <div class="cell"><a href="#" class="links">Contact us</a></div>
+              <div class="cell"><a href="#" class="links">Feedbacks</a></div>
+              <div class="cell"><a href="#" class="links">FAQ's</a></div>
+            </div>
+            <div class="column">
+              <div class="cell cell-head">About Clothing</div>
+              <div class="cell"><a href="#" class="links">Follow Us</a></div>
+              <div class="cell"><a href="#" class="links">Latest News</a></div>
+              <div class="cell"><a href="#" class="links">About Clothing</a></div>
+            </div>
+            <div class="column">
+              <div class="cell cell-head">OTHERS</div>
+              <div class="cell"><a href="#" class="links">Cookies</a></div>
+              <div class="cell"><a href="#" class="links">Sitemap</a></div>
+              <div class="cell"><a href="#" class="links">Legal & Privacy</a></div>
+            </div>
+    </section><br><br>
+    <div class="last-logo">Clothing</div><br>
+    <script src="JavaScript/index.js"></script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/cart.js"></script>
+    <script>
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = "-100px";
+        } else {
+            navbar.style.top = "0";
+            if (scrollTop === 0) {
+                navbar.classList.remove("scrolled"); 
+            } else {
+                navbar.classList.add("scrolled"); 
+                }
+            }
+        lastScrollTop = scrollTop;
+        }
+        );
+//Accordian
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                var panel = this.nextElementSibling;
+                var isActive = this.classList.contains("active");
+                // Close all accordion panels
+                for (var j = 0; j < acc.length; j++) {
+                    var otherPanel = acc[j].nextElementSibling;
+                    if (otherPanel !== panel) {
+                        otherPanel.style.maxHeight = null;
+                        acc[j].classList.remove("active");
+                    }
+                }
+                if (isActive) {
+                    this.classList.remove("active");
+                    panel.style.maxHeight = null;
+                } else {
+                    this.classList.add("active");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                }
+            );
+        }
+    </script>
+</body>
+</html>
